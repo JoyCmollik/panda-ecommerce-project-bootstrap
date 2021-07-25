@@ -24,6 +24,23 @@
       body {
         font-family: "Poppins", sans-serif;
       }
+
+      textarea:hover,
+      input:hover,
+      textarea:active,
+      input:active,
+      textarea:focus,
+      input:focus,
+      button:focus,
+      button:active,
+      button:hover,
+      label:focus,
+      .btn:active,
+      .btn.active {
+        outline: 0px !important;
+        -webkit-appearance: none;
+        box-shadow: none !important;
+      }
     </style>
   </head>
   <body>
@@ -96,18 +113,18 @@
           class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div style="background: #feeae9" class="carousel-inner rounded-3">
+          <div
+            style="background: #feeae9"
+            class="
+              carousel-inner
+              rounded-3
+              px-1 px-sm-1 px-md-3 px-lg-4
+              py-3 py-sm-3 py-md-4 py-lg-5
+            "
+          >
             <!-- start of carousel-item -->
             <div class="carousel-item active">
-              <div
-                class="
-                  row
-                  px-sm-1 px-md-3 px-lg-4
-                  py-sm-3 py-md-4 py-lg-5
-                  gy-4
-                  rounded
-                "
-              >
+              <div class="row gy-4">
                 <!-- left side -->
                 <div class="col-lg-8 col-md-6 col-sm-12">
                   <h1 class="fw-bold fs-1">Mi LED TV 4A PRO 32</h1>
@@ -143,15 +160,7 @@
             <!-- end of carousel item -->
             <!-- start of carousel-item -->
             <div class="carousel-item">
-              <div
-                class="
-                  row
-                  px-sm-2 px-md-3 px-lg-4
-                  py-sm-5 py-md-4 py-lg-5
-                  gy-4
-                  rounded
-                "
-              >
+              <div class="row gy-4">
                 <!-- left side -->
                 <div class="col-lg-8 col-md-6 col-sm-12">
                   <h1 class="fw-bold fs-1">Mi LED TV 4A PRO 32</h1>
@@ -187,15 +196,7 @@
             <!-- end of carousel item -->
             <!-- start of carousel-item -->
             <div class="carousel-item">
-              <div
-                class="
-                  row
-                  px-sm-2 px-md-3 px-lg-4
-                  py-sm-3 py-md-4 py-lg-5
-                  gy-4
-                  rounded
-                "
-              >
+              <div class="row gy-4">
                 <!-- left side -->
                 <div class="col-lg-8 col-md-6 col-sm-12">
                   <h1 class="fw-bold fs-1">Mi LED TV 4A PRO 32</h1>
@@ -236,7 +237,7 @@
     </header>
     <main>
       <!-- start of category section -->
-      <section class="categories mt-4">
+      <section class="categories p-4">
         <div class="container">
           <h2 class="fw-bold">Categories</h2>
 
@@ -332,8 +333,213 @@
         </div>
       </section>
       <!-- end of category section -->
+
+      <!-- start of products section -->
+      <section style="background: #f4f4f4" class="products mt-4">
+        <!-- start of product shoes -->
+        <div class="container py-4">
+          <!-- start of a title -->
+          <div class="d-flex justify-content-between align-items-center pb-4">
+            <h2 class="fw-bold">Shoes</h2>
+            <a style="color: #ff9d00" href="#" class="text-decoration-none"
+              >See All</a
+            >
+          </div>
+          <!-- end of a title -->
+          <div class="row gy-3 gy-md-4 gx-lg-5">
+            <!-- start of a card -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="card border-0 text-center rounded h-100">
+                <img
+                  src="images/shoes/shoe-1.png"
+                  class="card-img-top d-inline-block mx-auto"
+                  alt="a picture of shoe"
+                  style="width: 70%"
+                />
+                <div class="card-body">
+                  <h2 class="card-title fw-bolder">Reebok Dart Men’s Shoes</h2>
+                  <p class="card-text mt-4">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint.
+                  </p>
+                  <h3 class="fs-5">$1289</h3>
+                  <a href="#" class="btn btn-dark text-uppercase d-inline-block"
+                    >buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- end of a card -->
+            <!-- start of a card -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="card border-0 text-center rounded h-100">
+                <img
+                  src="images/shoes/shoe-2.png"
+                  class="card-img-top d-inline-block mx-auto"
+                  alt="a picture of shoe"
+                  style="width: 70%"
+                />
+                <div class="card-body">
+                  <h2 class="card-title fw-bolder">Reebok Pump</h2>
+                  <p class="card-text mt-4">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint.
+                  </p>
+                  <h3 class="fs-5">$799</h3>
+                  <a href="#" class="btn btn-dark text-uppercase d-inline-block"
+                    >buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- end of a card -->
+            <!-- start of a card -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="card border-0 text-center rounded h-100">
+                <img
+                  src="images/shoes/shoe-3.png"
+                  class="card-img-top d-inline-block mx-auto"
+                  alt="a picture of shoe"
+                  style="width: 70%"
+                />
+                <div class="card-body">
+                  <h2 class="card-title fw-bolder">Reebok All Terrain</h2>
+                  <p class="card-text mt-4">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint.
+                  </p>
+                  <h3 class="fs-5">$699</h3>
+                  <a href="#" class="btn btn-dark text-uppercase d-inline-block"
+                    >buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- end of a card -->
+          </div>
+        </div>
+        <!-- end of product shoes -->
+
+        <!-- start of product backpack -->
+        <div class="container py-4">
+          <!-- start of a title -->
+          <div class="d-flex justify-content-between align-items-center pb-4">
+            <h2 class="fw-bold">Backpack</h2>
+            <a style="color: #ff9d00" href="#" class="text-decoration-none"
+              >See All</a
+            >
+          </div>
+          <!-- end of a title -->
+          <div class="row gy-3 gy-md-4 gx-lg-5">
+            <!-- start of a card -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="card border-0 text-center rounded h-100">
+                <img
+                  src="images/bags/bag-1.png"
+                  class="card-img-top d-inline-block mx-auto"
+                  alt="a picture of shoe"
+                  style="width: 70%"
+                />
+                <div class="card-body">
+                  <h2 class="card-title fw-bolder">Ison Backpack</h2>
+                  <p class="card-text mt-4">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint.
+                  </p>
+                  <h3 class="fs-5">$1289</h3>
+                  <a href="#" class="btn btn-dark text-uppercase d-inline-block"
+                    >buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- end of a card -->
+            <!-- start of a card -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="card border-0 text-center rounded h-100">
+                <img
+                  src="images/bags/bag-2.png"
+                  class="card-img-top d-inline-block mx-auto"
+                  alt="a picture of shoe"
+                  style="width: 70%"
+                />
+                <div class="card-body">
+                  <h2 class="card-title fw-bolder">Biaowang Backpack</h2>
+                  <p class="card-text mt-4">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint.
+                  </p>
+                  <h3 class="fs-5">$799</h3>
+                  <a href="#" class="btn btn-dark text-uppercase d-inline-block"
+                    >buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- end of a card -->
+            <!-- start of a card -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="card border-0 text-center rounded h-100">
+                <img
+                  src="images/bags/bag-3.png"
+                  class="card-img-top d-inline-block mx-auto"
+                  alt="a picture of shoe"
+                  style="width: 70%"
+                />
+                <div class="card-body">
+                  <h2 class="card-title fw-bolder">Dxyizu WS54 Smart</h2>
+                  <p class="card-text mt-4">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint.
+                  </p>
+                  <h3 class="fs-5">$699</h3>
+                  <a href="#" class="btn btn-dark text-uppercase d-inline-block"
+                    >buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- end of a card -->
+          </div>
+        </div>
+        <!-- end of product backpack -->
+      </section>
+      <!-- end of products section -->
+
+      <!-- start of subscribe section -->
+      <section class="subscribe py-5">
+        <div class="container text-center p-5" style="background: #fff2f1">
+          <h3 class="fw-bold text-uppercase">let's stay in touch</h3>
+          <p style="color: #707070">Get updates on sales specials and more</p>
+          <form action="#">
+            <div class="input-group mb-3 w-50 mx-auto">
+              <input
+                type="email"
+                class="form-control border-0 bg-white p-2"
+                id="exampleFormControlInput1"
+                placeholder="Enter your email"
+              />
+              <button
+                class="btn btn-outline-0 text-white px-4"
+                type="button"
+                id="button-addon2"
+                style="
+                  background: linear-gradient(180deg, #ff589b 0%, #ff136f 100%);
+                "
+              >
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- end of subscribe section -->
     </main>
-    <footer></footer>
+    <footer class="pt-5 pb-2 text-center">
+      <p style="color: #707070">
+        Developed by &copy; Joy C Mollik | &copy; A Programming Hero initiative
+      </p>
+    </footer>
 
     <!-- bootstrap js -->
     <script
